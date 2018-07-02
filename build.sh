@@ -244,6 +244,7 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
 				sudo rm -rf $ROOT/output/rootfs
 			fi
 			sudo mv $ROOT/output/tmp $ROOT/output/rootfs
+			sudo chmod a+s $ROOT/output/rootfs/usr/bin/sudo
 			whiptail --title "OrangePi Build System" --msgbox "Rootfs has build" \
 				10 40 0	--ok-button Continue
 		else

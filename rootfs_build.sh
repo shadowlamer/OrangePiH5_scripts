@@ -335,6 +335,7 @@ adduser --gecos root --disabled-login root --uid 0
 chown -R 1000:1000 /home/$DEBUSER
 echo "$DEBUSER:$DEBUSER" | chpasswd
 usermod -a -G sudo,adm,input,video,plugdev $DEBUSER
+chmod a+s /usr/bin/sudo
 apt-get -y autoremove
 apt-get clean
 EOF

@@ -20,7 +20,7 @@ BUILD="$ROOT/external"
 OUTPUT="$ROOT/output"
 IMAGE="$OUTPUT/${PLATFORM}.img"
 ROOTFS="$OUTPUT/rootfs"
-disk_size="1200"
+disk_size="1500"
 
 if [ -z "$disk_size" ]; then
 	disk_size=100 #MiB
